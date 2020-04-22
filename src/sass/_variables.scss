@@ -1,0 +1,32 @@
+// sass/_variables.scss – tutaj będziemy definiować wszystkie zmienne dotyczące projektu takie jak kolory, wielkości, czcionki oraz inne standaryzacje,
+
+/* Colors */
+
+$paragraph-color: #000000;
+$brand-main-color: #ff0000;
+$font-main-color:#999DA0;
+$btn-main-color:#FFA500;
+$btn-hover-color:#FFB611;
+$btn-font-color:#ffffff;
+$hover-link-color:#D1EDF2;
+$nav-color:#ffffff;
+$sidebar-color:#222222;
+$hover-sidebar-color:#444444;
+$section-bgc-color: #DBD9d1;
+
+/* Font sizes */
+
+$paragraph-font-size: 16px;
+
+/* Fonts */
+
+$brand-font: "Open Sans",
+Helvetica,
+Arial;
+$paragraph-font: "Open Sans",
+Helvetica,
+Arial;
+
+/* border */
+
+$border: 1px solid black;

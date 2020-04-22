@@ -1,0 +1,32 @@
+//top-bar
+.top-bar {
+    flex-basis: 100%;
+    border: $border;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    .widget-money {
+        flex-basis: 15%;
+        border: $border;
+    }
+    .widget-money {
+        flex-basis: 15%;
+        border: $border;
+    }
+    .widget-alert {
+        flex-basis: 5%;
+        border: $border;
+    }
+    .widget-login {
+        flex-basis: 15%;
+        border: $border;
+    }
+    .widget-exit {
+        flex-basis: 5%;
+        border: $border;
+    }
+}

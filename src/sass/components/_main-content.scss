@@ -1,0 +1,21 @@
+//main container
+.section-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: $border;
+    justify-content: space-around;
+    flex-basis: 85%;
+    margin-top: 8%;
+    margin-left: 15%;
+    background-color: $section-bgc-color;
+}
+
+// main-content
+.main-content {
+    border: $border;
+    height: 55vh;
+    flex-basis: 95%;
+    margin: 1%;
+    background-color: $nav-color;
+}
