@@ -7,6 +7,14 @@
 
 body {
     margin: 0;
+    background-color: #111111;
+}
+
+.main-container {
+    width: 85%;
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
 }
 
 //first-container
@@ -15,89 +23,137 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     flex-basis: 100%;
-    // height: 100vh;
+    background-color: #DBD9d1;
 }
 
-//main container
 .section-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: $border;
     justify-content: space-around;
     flex-basis: 85%;
-    margin-top: 8%;
-    margin-left: 15%;
+    margin-top: 5.5%;
+    margin-left: 17%;
     background-color: $section-bgc-color;
-}
-
-// main-content
-.main-content {
-    border: $border;
-    height: 55vh;
-    flex-basis: 95%;
-    margin: 1%;
-    background-color: $nav-color;
+    .main-content {
+        border: 1px solid $font-main-color;
+        height: 90vh;
+        flex-basis: 95%;
+        margin: 1%;
+        background-color: $nav-color;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .wrapper {
+            border: 1px solid $font-main-color;
+            .title {
+                border: $border;
+                height: 5vh;
+                border: 1px solid $font-main-color;
+                h2 {
+                    margin: 5px;
+                    text-align: left;
+                    color: $font-main-color;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                }
+            }
+            .content {
+                border: $border;
+                height: 85vh;
+                border: 1px solid $font-main-color;
+            }
+        }
+    }
 }
 
 //sidebar
 .sidebar {
     flex-basis: 15%;
-    border: $border;
+    // border: $border;
     height: 130vh;
     position: fixed;
     width: 15%;
     background-color: $sidebar-color;
-}
-
-.logo {
-    height: 10vh;
-    border: $border;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-left: 5%;
-    p {
-        color: $nav-color;
-        flex-basis: 80%;
-        font-size: 20px;
-        line-height: 20px;
-        font-family: $brand-font;
-    }
-    i {
-        color: $nav-color;
-        font-size: 20px;
-        line-height: 60px;
-    }
-}
-
-.sidebar-menu {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    height: 50vh;
-    justify-content: space-around;
-    align-items: center;
-    border: $border;
-    margin: 0;
-    padding: 0;
-    .sidebar-menu-item {
-        display: block;
-        width: 100%;
-        border: $border;
-        height: 40px;
-        a {
-            display: flex;
-            text-decoration: none;
-            // border: $border;
-            text-align: center;
+    .logo {
+        height: 8vh;
+        // border: $border;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        p {
             color: $nav-color;
-            line-height: 40px;
-            // width: 100%;
-            i {
-                flex-basis: 30%;
-                line-height: 45px;
+            flex-basis: 80%;
+            font-size: 25px;
+            font-family: $logo-font;
+        }
+        i {
+            color: $nav-color;
+            font-size: 25px;
+        }
+        i:hover {
+            color: $font-main-color;
+        }
+    }
+    .sidebar-menu {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        height: 50vh;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px $font-main-color solid;
+        margin: 0;
+        padding: 0;
+        .sidebar-menu-item {
+            display: block;
+            width: 100%;
+            // border: $border;
+            height: 40px;
+            a {
+                display: flex;
+                text-decoration: none;
+                // border: $border;
+                text-align: center;
+                color: $font-main-color;
+                line-height: 40px;
+                // width: 100%;
+                i {
+                    flex-basis: 30%;
+                    line-height: 45px;
+                }
+            }
+        }
+    }
+    .communicator {
+        height: 10vh;
+        margin-top: 2%;
+        p {
+            color: $font-main-color;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        .people {
+            display: flex;
+            margin-top: 10%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            .name {
+                flex-basis: 50%;
+                color: $color-status;
+                line-height: 50px;
+            }
+            .status {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                // border: 1px solid black;
+                background-color: greenyellow;
             }
         }
     }
@@ -105,37 +161,74 @@ body {
 
 .sidebar-menu-item:hover {
     background-color: $hover-sidebar-color;
+    color: $hover-sidebar-font-color;
+    border-left: 5px $btn-main-color solid;
+    a:hover {
+        color: $hover-sidebar-font-color;
+    }
 }
 
 //top-bar
 .top-bar {
     flex-basis: 100%;
-    border: $border;
-    height: 10vh;
+    border: 1px solid $font-main-color;
+    height: 8vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-end;
     position: fixed;
-    width: 100%;
+    width: 85%;
+    font-size: 20px;
+    color: $font-main-color;
+    background-color: white;
     .widget-money {
-        flex-basis: 15%;
-        border: $border;
-    }
-    .widget-money {
-        flex-basis: 15%;
-        border: $border;
-    }
-    .widget-alert {
-        flex-basis: 5%;
-        border: $border;
+        flex-basis: 18%;
+        border-left: 1px solid $font-main-color;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        .wallet {
+            font-weight: bold;
+        }
+        .icon-arrow-down-small {
+            font-size: 10px;
+        }
     }
     .widget-login {
         flex-basis: 15%;
-        border: $border;
+        border-left: 1px solid $font-main-color;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        .login-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid $font-main-color;
+            i {
+                font-size: 15px;
+            }
+        }
+        .login-name {
+            font-size: 20px;
+            color: $color-status;
+        }
     }
-    .widget-exit {
+    .widget-quit,
+    .widget-alert {
         flex-basis: 5%;
-        border: $border;
+        border-left: 1px solid $font-main-color;
+        padding: 0 20px;
+        i {
+            line-height: 65px;
+            text-align: center;
+        }
     }
 }
