@@ -1,32 +1,64 @@
 //top-bar
 .top-bar {
     flex-basis: 100%;
-    border: $border;
-    height: 10vh;
+    border: 1px solid $font-main-color;
+    height: 8vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-end;
     position: fixed;
-    width: 100%;
+    width: 85%;
+    font-size: 20px;
+    color: $font-main-color;
+    background-color: white;
     .widget-money {
-        flex-basis: 15%;
-        border: $border;
-    }
-    .widget-money {
-        flex-basis: 15%;
-        border: $border;
-    }
-    .widget-alert {
-        flex-basis: 5%;
-        border: $border;
+        flex-basis: 18%;
+        border-left: 1px solid $font-main-color;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        .wallet {
+            font-weight: bold;
+        }
+        .icon-arrow-down-small {
+            font-size: 10px;
+        }
     }
     .widget-login {
         flex-basis: 15%;
-        border: $border;
+        border-left: 1px solid $font-main-color;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        .login-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid $font-main-color;
+            i {
+                font-size: 15px;
+            }
+        }
+        .login-name {
+            font-size: 20px;
+            color: $color-status;
+        }
     }
-    .widget-exit {
+    .widget-quit,
+    .widget-alert {
         flex-basis: 5%;
-        border: $border;
+        border-left: 1px solid $font-main-color;
+        padding: 0 20px;
+        i {
+            line-height: 65px;
+            text-align: center;
+        }
     }
 }

@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #111111;
+}
+
+.main-container {
+    width: 85%;
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+}
+
+//first-container
+.first-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    background-color: #DBD9d1;
+}

@@ -8,6 +8,46 @@
     flex-basis: 85%;
     margin-top: 8%;
     margin-left: 15%;
+    .section-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-basis: 85%;
+        margin-top: 5.5%;
+        margin-left: 17%;
+        background-color: $section-bgc-color;
+        .main-content {
+            border: 1px solid $font-main-color;
+            height: 90vh;
+            flex-basis: 95%;
+            margin: 1%;
+            background-color: $nav-color;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .wrapper {
+                border: 1px solid $font-main-color;
+                .title {
+                    border: $border;
+                    height: 5vh;
+                    border: 1px solid $font-main-color;
+                    h2 {
+                        margin: 5px;
+                        text-align: left;
+                        color: $font-main-color;
+                        font-weight: normal;
+                        text-transform: uppercase;
+                    }
+                }
+                .content {
+                    border: $border;
+                    height: 85vh;
+                    border: 1px solid $font-main-color;
+                }
+            }
+        }
+    }
     background-color: $section-bgc-color;
 }
 
