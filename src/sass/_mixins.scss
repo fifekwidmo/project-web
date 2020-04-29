@@ -1,1 +1,148 @@
 // sass/_mixins.scss – w tym pliku zbierzemy wszystkie mixiny,
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    //CSS
+}
+
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    //CSS
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    //CSS
+    .main-container {
+        width: 100%;
+    }
+    .section-container {
+        flex-basis: 85%;
+        // margin-top: 7.5%;
+        // margin-left: 17%;
+        margin: 7.5% auto 0 auto;
+        background-color: $section-bgc-color;
+        .main-content {
+            height: 90vh;
+            flex-basis: 95%;
+            margin: 1%;
+            .wrapper {
+                .title {
+                    height: 5vh;
+                }
+            }
+        }
+    }
+    .section-container .banners-container {
+        height: 70vh;
+    }
+    .section-container .main-content-banners {
+        height: 70vh;
+    }
+    .margin {
+        margin-top: 55.5%;
+    }
+    .top-bar {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        height: 6vh;
+        .widget-login,
+        .widget-money {
+            flex-basis: 40%;
+        }
+    }
+    .sidebar {
+        // border: $border;
+        height: 8vh;
+        position: fixed;
+        width: 100%;
+        .sidebar-menu {
+            display: none;
+            flex-direction: column;
+            list-style-type: none;
+            height: 50vh;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px $font-main-color solid;
+            margin: 0;
+            padding: 0;
+            .sidebar-menu-item {
+                display: block;
+                width: 100%;
+                // border: $border;
+                height: 40px;
+            }
+        }
+        .active {
+            display: flex;
+            background-color: $sidebar-color;
+            flex-direction: column;
+            list-style-type: none;
+            height: 50vh;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px $font-main-color solid;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar-menu-item:hover {
+            background-color: $hover-sidebar-color;
+            color: $hover-sidebar-font-color;
+            border-left: 5px $btn-main-color solid;
+            a:hover {
+                color: $hover-sidebar-font-color;
+            }
+        }
+        .communicator {
+            display: none;
+        }
+    }
+    .bell {
+        margin-top: 15px;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    //CSS
+}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    //CSS
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    //CSS
+}

@@ -8,7 +8,7 @@
 body {
     margin: 0;
     background-color: #111111;
-    font-family: $brand-font
+    font-family: $brand-font;
 }
 
 .main-container {
@@ -661,6 +661,15 @@ div.link-wrapper:last-of-type {
     .section-container {
         margin: 10.5% auto 0 auto;
     }
+    .section-container .main-content .wrapper .content .calendar {
+        height: 7vh;
+    }
+    .sidebar .active {
+        height: 52vh;
+    }
+    .margin {
+        margin-top: 81.5%;
+    }
 }
 
 @media (max-width: 740px) {
@@ -668,7 +677,7 @@ div.link-wrapper:last-of-type {
         margin: 15.5% auto 0 auto;
     }
     .sidebar .active {
-        height: 40vh;
+        height: 52vh;
     }
     .margin {
         margin-top: 60.5%;
@@ -685,41 +694,274 @@ div.link-wrapper:last-of-type {
     }
 }
 
-@media (max-width: 375px) {
-    .sidebar .active {
-        height: 44vh;
+@media (max-width: 414px) {
+    .top-bar {
+        min-width: 412px;
+        .widget-money {
+            font-size: 12px;
+            i {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+        .widget-login p {
+            font-size: 10px;
+        }
+        .widget-quit i {
+            line-height: 45px;
+        }
+    }
+    .logo {
+        min-width: 412px;
+    }
+    .sidebar.active {
+        height: 51vh;
     }
     .section-container {
-        margin: 30.5% auto 0 auto;
+        margin: 13.5% auto 0 auto;
+        .main-content .wrapper {
+            min-width: 412px;
+            .content .calendar {
+                padding: 0;
+                height: 6vh;
+                .start-date {
+                    padding: 0;
+                    width: 30%;
+                    p {
+                        margin: 0;
+                        font-size: 12px;
+                        line-height: 40px;
+                    }
+                }
+                .end-date {
+                    padding: 0;
+                    width: 30%;
+                    div {
+                        i {
+                            line-height: 40px;
+                            margin: 0;
+                            font-size: 12px;
+                        }
+                        p {
+                            margin: 0;
+                            font-size: 12px;
+                            line-height: 40px;
+                        }
+                    }
+                }
+                .refresh {
+                    margin-left: 20px;
+                    height: 40px;
+                    width: 40px;
+                    i {
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
     }
+    .links {
+        font-size: 10px;
+        height: 55vh;
+        .link-wrapper {
+            height: 11%;
+            .link-name {
+                width: 20%;
+            }
+            .icon i {
+                margin: 0;
+            }
+            .icon i:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+    .first-btn {
+        font-size: 15px;
+        height: 30px;
+        width: 100px;
+    }
+    .first-btn:last-of-type {
+        margin-top: 50px;
+    }
+    .margin {
+        margin-top: 105.5%;
+    }
+}
+
+@media (max-width: 375px) {
     .top-bar {
-        flex-basis: 100%;
-        border: 1px solid $font-main-color;
-        height: 8vh;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        position: fixed;
-        font-size: 16px;
-        color: $font-main-color;
-        background-color: white;
-        .widget-login,
+        min-width: 373px;
         .widget-money {
-            width: 40%;
-            padding: 0;
-            font-size: 16px;
+            font-size: 12px;
+            i {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
         }
-        .widget-login .login-name {
-            font-size: 16px;
+        .widget-login p {
+            font-size: 10px;
         }
-        .widget-alert {
-            width: 10%;
-            padding: 0;
+        .widget-quit i {
+            line-height: 45px;
         }
-        .widget-quit {
-            width: 10%;
-            padding: 0;
+    }
+    .logo {
+        min-width: 373px;
+    }
+    .sidebar.active {
+        height: 51vh;
+    }
+    .section-container {
+        margin: 13.5% auto 0 auto;
+        .main-content .wrapper {
+            min-width: 373px;
+            .content .calendar {
+                padding: 0;
+                height: 6vh;
+                .start-date {
+                    padding: 0;
+                    width: 30%;
+                    p {
+                        margin: 0;
+                        font-size: 12px;
+                        line-height: 35px;
+                    }
+                }
+                .end-date {
+                    padding: 0;
+                    width: 30%;
+                    div {
+                        i {
+                            line-height: 37px;
+                            margin: 0;
+                            font-size: 12px;
+                        }
+                        p {
+                            margin: 0;
+                            font-size: 12px;
+                            line-height: 35px;
+                        }
+                    }
+                }
+                .refresh {
+                    margin-left: 20px;
+                    height: 35px;
+                    width: 35px;
+                    i {
+                        line-height: 35px;
+                    }
+                }
+            }
         }
+    }
+    .links {
+        font-size: 10px;
+        height: 55vh;
+        .link-wrapper {
+            height: 11%;
+            .link-name {
+                width: 20%;
+            }
+            .icon i {
+                margin: 0;
+            }
+            .icon i:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+    .first-btn {
+        font-size: 15px;
+        height: 30px;
+        width: 100px;
+    }
+    .first-btn:last-of-type {
+        margin-top: 50px;
+    }
+    .margin {
+        margin-top: 105.5%;
+    }
+}
+
+@media (max-width: 320px) {
+    .top-bar {
+        min-width: 318px;
+    }
+    .logo {
+        min-width: 318px;
+    }
+    .sidebar.active {
+        height: 55vh;
+    }
+    .section-container {
+        margin: 13.5% auto 0 auto;
+        .main-content .wrapper {
+            min-width: 318px;
+            .content .calendar {
+                padding: 0;
+                height: 6vh;
+                .start-date {
+                    padding: 0;
+                    width: 30%;
+                    p {
+                        margin: 0;
+                        font-size: 10px;
+                        line-height: 30px;
+                    }
+                }
+                .end-date {
+                    padding: 0;
+                    width: 30%;
+                    div {
+                        i {
+                            line-height: 35px;
+                            margin: 0;
+                            font-size: 10px;
+                        }
+                        p {
+                            margin: 0;
+                            font-size: 10px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+                .refresh {
+                    margin-left: 20px;
+                    height: 30px;
+                    width: 30px;
+                    i {
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .links {
+        font-size: 10px;
+        height: 55vh;
+        .link-wrapper {
+            height: 11%;
+            .link-name {
+                width: 20%;
+            }
+            .icon i {
+                margin: 0;
+            }
+            .icon i:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+    .first-btn {
+        font-size: 15px;
+        height: 30px;
+        width: 100px;
+    }
+    .first-btn:last-of-type {
+        margin-top: 35px;
+    }
+    .margin {
+        margin-top: 105.5%;
     }
 }
