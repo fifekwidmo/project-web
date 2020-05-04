@@ -1,8 +1,8 @@
 // sass/style.scss – nasz główny plik SASS, w którym będziemy importować wszystkie mniejsze pliki,
 @import "variables.scss";
-@import "mixins.scss";
 @import "normalize.scss";
 @import "layout.scss";
+@import "mixins.scss";
 
 /* Components */
 

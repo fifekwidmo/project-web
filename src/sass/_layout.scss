@@ -518,450 +518,57 @@ div.link-wrapper:last-of-type {
     height: 155vh;
 }
 
-@media (min-width: 1024px) and (orientation: landscape) {
-    //top-bar
-    .top-bar {
-        .widget-quit,
-        .widget-alert {
-            i {
-                line-height: 60px;
-            }
-        }
+//form
+.form {
+    display: block !important;
+    height: 110vh !important;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    button {
+        align-self: center;
+        margin: 50px 0 !important;
     }
 }
 
-@media (max-width: 1024px) {
-    //top-bar
-    .top-bar {
-        flex-basis: 100%;
-        height: 7vh;
-        .widget-money {
-            flex-basis: 33%;
-        }
-        .widget-login {
-            flex-basis: 30%;
-        }
-        .widget-quit,
-        .widget-alert {
-            flex-basis: 10%;
-            i {
-                line-height: 55px;
-            }
-        }
-    }
-    .section-container {
-        .main-content {
-            .wrapper {
-                .title {
-                    h2 {
-                        font-size: 16px;
-                        line-height: calc(35.4px - 16px);
-                    }
-                }
-            }
-        }
-    }
-    .bell {
-        font-size: 17px;
-    }
+.first-section,
+.second-section,
+.third-section,
+.forth-section {
+    border-bottom: 1px solid $font-main-color;
 }
 
-@media (max-width: 900px) {
-    .main-container {
-        width: 100%;
-    }
-    .section-container {
-        flex-basis: 85%;
-        // margin-top: 7.5%;
-        // margin-left: 17%;
-        margin: 7.5% auto 0 auto;
-        background-color: $section-bgc-color;
-        .main-content {
-            height: 90vh;
-            flex-basis: 95%;
-            margin: 1%;
-            .wrapper {
-                .title {
-                    height: 5vh;
-                }
-            }
-        }
-    }
-    .section-container .banners-container {
-        height: 70vh;
-    }
-    .section-container .main-content-banners {
-        height: 70vh;
-    }
-    .margin {
-        margin-top: 55.5%;
-    }
-    .top-bar {
-        width: 100%;
-        left: 0;
-        bottom: 0;
-        height: 6vh;
-        .widget-login,
-        .widget-money {
-            flex-basis: 40%;
-        }
-    }
-    .sidebar {
-        // border: $border;
-        height: 8vh;
-        position: fixed;
-        width: 100%;
-        .sidebar-menu {
-            display: none;
-            flex-direction: column;
-            list-style-type: none;
-            height: 50vh;
-            justify-content: space-around;
-            align-items: center;
-            border-bottom: 1px $font-main-color solid;
-            margin: 0;
-            padding: 0;
-            .sidebar-menu-item {
-                display: block;
-                width: 100%;
-                // border: $border;
-                height: 40px;
-            }
-        }
-        .active {
-            display: flex;
-            background-color: $sidebar-color;
-            flex-direction: column;
-            list-style-type: none;
-            height: 50vh;
-            justify-content: space-around;
-            align-items: center;
-            border-bottom: 1px $font-main-color solid;
-            margin: 0;
-            padding: 0;
-        }
-        .sidebar-menu-item:hover {
-            background-color: $hover-sidebar-color;
-            color: $hover-sidebar-font-color;
-            border-left: 5px $btn-main-color solid;
-            a:hover {
-                color: $hover-sidebar-font-color;
-            }
-        }
-        .communicator {
-            display: none;
-        }
-    }
-    .bell {
-        margin-top: 15px;
-    }
+.first-section label,
+.second-section label,
+.third-section label,
+.forth-section label {
+    font-weight: bold;
+    color: $font-main-color;
+    line-height: 24px;
 }
 
-@media (max-width: 768px) {
-    .section-container {
-        margin: 10.5% auto 0 auto;
-    }
-    .section-container .main-content .wrapper .content .calendar {
-        height: 7vh;
-    }
-    .sidebar .active {
-        height: 52vh;
-    }
-    .margin {
-        margin-top: 81.5%;
-    }
+.first-section .field,
+.second-section .field,
+.third-section .field,
+.forth-section .field {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5% 25%;
+    margin: 8px 0 10px 0;
 }
 
-@media (max-width: 740px) {
-    .section-container {
-        margin: 15.5% auto 0 auto;
-    }
-    .sidebar .active {
-        height: 52vh;
-    }
-    .margin {
-        margin-top: 60.5%;
-    }
-    .links .link-wrapper {
-        margin-left: 0;
-        margin-right: 0;
-    }
+::placeholder {
+    color: red;
+    font-size: 12px;
 }
 
-@media (max-width:500px) {
-    body {
-        background-color: $section-bgc-color;
-    }
-}
-
-@media (max-width: 414px) {
-    .top-bar {
-        min-width: 412px;
-        .widget-money {
-            font-size: 12px;
-            i {
-                margin-left: 5px;
-                margin-right: 5px;
-            }
-        }
-        .widget-login p {
-            font-size: 10px;
-        }
-        .widget-quit i {
-            line-height: 45px;
-        }
-    }
-    .logo {
-        min-width: 412px;
-    }
-    .sidebar.active {
-        height: 51vh;
-    }
-    .section-container {
-        margin: 13.5% auto 0 auto;
-        .main-content .wrapper {
-            min-width: 412px;
-            .content .calendar {
-                padding: 0;
-                height: 6vh;
-                .start-date {
-                    padding: 0;
-                    width: 30%;
-                    p {
-                        margin: 0;
-                        font-size: 12px;
-                        line-height: 40px;
-                    }
-                }
-                .end-date {
-                    padding: 0;
-                    width: 30%;
-                    div {
-                        i {
-                            line-height: 40px;
-                            margin: 0;
-                            font-size: 12px;
-                        }
-                        p {
-                            margin: 0;
-                            font-size: 12px;
-                            line-height: 40px;
-                        }
-                    }
-                }
-                .refresh {
-                    margin-left: 20px;
-                    height: 40px;
-                    width: 40px;
-                    i {
-                        line-height: 40px;
-                    }
-                }
-            }
-        }
-    }
-    .links {
-        font-size: 10px;
-        height: 55vh;
-        .link-wrapper {
-            height: 11%;
-            .link-name {
-                width: 20%;
-            }
-            .icon i {
-                margin: 0;
-            }
-            .icon i:last-of-type {
-                margin: 0;
-            }
-        }
-    }
-    .first-btn {
-        font-size: 15px;
-        height: 30px;
-        width: 100px;
-    }
-    .first-btn:last-of-type {
-        margin-top: 50px;
-    }
-    .margin {
-        margin-top: 105.5%;
-    }
-}
-
-@media (max-width: 375px) {
-    .top-bar {
-        min-width: 373px;
-        .widget-money {
-            font-size: 12px;
-            i {
-                margin-left: 5px;
-                margin-right: 5px;
-            }
-        }
-        .widget-login p {
-            font-size: 10px;
-        }
-        .widget-quit i {
-            line-height: 45px;
-        }
-    }
-    .logo {
-        min-width: 373px;
-    }
-    .sidebar.active {
-        height: 51vh;
-    }
-    .section-container {
-        margin: 13.5% auto 0 auto;
-        .main-content .wrapper {
-            min-width: 373px;
-            .content .calendar {
-                padding: 0;
-                height: 6vh;
-                .start-date {
-                    padding: 0;
-                    width: 30%;
-                    p {
-                        margin: 0;
-                        font-size: 12px;
-                        line-height: 35px;
-                    }
-                }
-                .end-date {
-                    padding: 0;
-                    width: 30%;
-                    div {
-                        i {
-                            line-height: 37px;
-                            margin: 0;
-                            font-size: 12px;
-                        }
-                        p {
-                            margin: 0;
-                            font-size: 12px;
-                            line-height: 35px;
-                        }
-                    }
-                }
-                .refresh {
-                    margin-left: 20px;
-                    height: 35px;
-                    width: 35px;
-                    i {
-                        line-height: 35px;
-                    }
-                }
-            }
-        }
-    }
-    .links {
-        font-size: 10px;
-        height: 55vh;
-        .link-wrapper {
-            height: 11%;
-            .link-name {
-                width: 20%;
-            }
-            .icon i {
-                margin: 0;
-            }
-            .icon i:last-of-type {
-                margin: 0;
-            }
-        }
-    }
-    .first-btn {
-        font-size: 15px;
-        height: 30px;
-        width: 100px;
-    }
-    .first-btn:last-of-type {
-        margin-top: 50px;
-    }
-    .margin {
-        margin-top: 105.5%;
-    }
-}
-
-@media (max-width: 320px) {
-    .top-bar {
-        min-width: 318px;
-    }
-    .logo {
-        min-width: 318px;
-    }
-    .sidebar.active {
-        height: 55vh;
-    }
-    .section-container {
-        margin: 13.5% auto 0 auto;
-        .main-content .wrapper {
-            min-width: 318px;
-            .content .calendar {
-                padding: 0;
-                height: 6vh;
-                .start-date {
-                    padding: 0;
-                    width: 30%;
-                    p {
-                        margin: 0;
-                        font-size: 10px;
-                        line-height: 30px;
-                    }
-                }
-                .end-date {
-                    padding: 0;
-                    width: 30%;
-                    div {
-                        i {
-                            line-height: 35px;
-                            margin: 0;
-                            font-size: 10px;
-                        }
-                        p {
-                            margin: 0;
-                            font-size: 10px;
-                            line-height: 30px;
-                        }
-                    }
-                }
-                .refresh {
-                    margin-left: 20px;
-                    height: 30px;
-                    width: 30px;
-                    i {
-                        line-height: 30px;
-                    }
-                }
-            }
-        }
-    }
-    .links {
-        font-size: 10px;
-        height: 55vh;
-        .link-wrapper {
-            height: 11%;
-            .link-name {
-                width: 20%;
-            }
-            .icon i {
-                margin: 0;
-            }
-            .icon i:last-of-type {
-                margin: 0;
-            }
-        }
-    }
-    .first-btn {
-        font-size: 15px;
-        height: 30px;
-        width: 100px;
-    }
-    .first-btn:last-of-type {
-        margin-top: 35px;
-    }
-    .margin {
-        margin-top: 105.5%;
-    }
+input:focus {
+    outline-color: $btn-main-color;
+    background-color: $color-status;
+    color: $btn-font-color;
 }
