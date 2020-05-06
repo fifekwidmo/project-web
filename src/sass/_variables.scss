@@ -35,3 +35,14 @@ Arial;
 /* border */
 
 $border: 1px solid black;
+//for chat
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+:root {
+    --background-color: #a5bfd4;
+    --header-color: #6a96d8;
+    --send-color: #e6edf6;
+    --received-color: #f2f2f2;
+    --blocked-color: #ffc1c1;
+    --light-gray: #dfdfdf;
+    --dark-gray: #858a91;
+}

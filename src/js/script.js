@@ -1,36 +1,54 @@
 const sidebarMenu = document.querySelector('.sidebar-menu');
 const hamburgerIcon = document.querySelector('.fa-bars');
 const sectionContainer = document.querySelector('.section-container');
-// const sectionContainer = document.querySelector('.section-container');
 console.log(hamburgerIcon, 'click');
-
-// let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-
-// hamburgerIcon.addEventListener('click', function() {
-//     sidebarMenu.classList.toggle('active');
-//     if (viewportWidth <= 440 && sidebarMenu.classList.contains('active')) {
-//         sectionContainer.style.marginTop = '75%';
-//         console.log('75');
-//     } else {
-//         sectionContainer.style.marginTop = '20%';
-//     }
-//     if (viewportWidth >= 440 && viewportWidth <= 680 && sidebarMenu.classList.contains('active')) {
-//         sectionContainer.style.marginTop = '65%';
-//         console.log('65');
-//     } else {
-//         sectionContainer.style.marginTop = '15.5%';
-//     }
-//     if (viewportWidth >= 680 && viewportWidth <= 900 && sidebarMenu.classList.contains('active')) {
-//         sectionContainer.style.marginTop = '55%';
-//         console.log('55');
-//     } else {
-//         sectionContainer.style.marginTop = '7.5%';
-//     }
-
-
-// });
-
 hamburgerIcon.addEventListener('click', function() {
     sidebarMenu.classList.toggle('active');
     sectionContainer.classList.toggle('margin');
+});
+//modal
+const widgetLogin = document.querySelector('.widget-login');
+widgetLogin.addEventListener('click', function() {
+    document.querySelectorAll('#overlay > *').forEach(function(modal) {
+        modal.classList.remove('show');
+    });
+    document.querySelector('#overlay').classList.add('show');
+    document.getElementById('first-modal').classList.add('show');
+    // document.getElementById('second-modal').classList.add('show');
+});
+const widgetQuit = document.querySelector('.widget-quit');
+widgetQuit.addEventListener('click', function() {
+    document.querySelectorAll('#overlay > *').forEach(function(modal) {
+        modal.classList.remove('show');
+    });
+    document.querySelector('#overlay').classList.add('show');
+    document.getElementById('second-modal').classList.add('show');
+});
+const people = document.querySelector('.people');
+people.addEventListener('click', function() {
+    document.querySelectorAll('#overlay > *').forEach(function(modal) {
+        modal.classList.remove('show');
+    });
+    document.querySelector('#overlay').classList.add('show');
+    document.getElementById('third-modal').classList.add('show');
+});
+
+function closeModal() {
+    document.getElementById('overlay').classList.remove('show');
+}
+document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        closeModal();
+    });
+});
+document.querySelector('#overlay').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeModal();
+    }
+});
+document.addEventListener('keyup', function(e) {
+    if (e.keyCode === 27) {
+        closeModal();
+    }
 });
