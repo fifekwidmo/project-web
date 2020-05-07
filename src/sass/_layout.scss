@@ -109,11 +109,6 @@ body {
                 }
                 .chart {
                     height: 74vh;
-                    img {
-                        width: 80%;
-                        height: 80%;
-                        margin: 10px auto 0 auto;
-                    }
                 }
             }
         }
@@ -568,7 +563,7 @@ form {
 
 input:focus {
     outline-color: $btn-main-color;
-    background-color: $color-status;
+    background-color: #d6d7d9;
     color: $btn-font-color;
 }
 

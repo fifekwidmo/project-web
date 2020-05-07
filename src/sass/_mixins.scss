@@ -59,8 +59,8 @@
         background-color: $section-bgc-color;
         .main-content {
             height: 90vh;
-            flex-basis: 95%;
-            margin: 1%;
+            flex-basis: 100%;
+            margin: 0%;
             .wrapper {
                 .title {
                     height: 5vh;
@@ -174,7 +174,7 @@
 
 @media (max-width: 414px) {
     .top-bar {
-        min-width: 412px;
+        width: 412px;
         .widget-money {
             font-size: 12px;
             i {
@@ -190,7 +190,7 @@
         }
     }
     .logo {
-        min-width: 412px;
+        width: 412px;
     }
     .sidebar.active {
         height: 51vh;
@@ -198,7 +198,7 @@
     .section-container {
         margin: 13.5% auto 0 auto;
         .main-content .wrapper {
-            min-width: 412px;
+            width: 412px;
             .content .calendar {
                 padding: 0;
                 height: 6vh;
@@ -285,7 +285,7 @@
         }
     }
     .logo {
-        min-width: 373px;
+        width: 373px;
     }
     .sidebar.active {
         height: 51vh;
@@ -293,7 +293,7 @@
     .section-container {
         margin: 13.5% auto 0 auto;
         .main-content .wrapper {
-            min-width: 373px;
+            width: 373px;
             .content .calendar {
                 padding: 0;
                 height: 6vh;
@@ -364,7 +364,7 @@
 
 @media (max-width: 320px) {
     .top-bar {
-        min-width: 318px;
+        width: 318px;
         .widget-quit,
         .widget-alert {
             padding: 0;
@@ -374,7 +374,7 @@
         }
     }
     .logo {
-        min-width: 318px;
+        width: 318px;
     }
     .sidebar.active {
         height: 55vh;
