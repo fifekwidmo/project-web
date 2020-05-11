@@ -1,4 +1,4 @@
-/* global Chart */
+/* global Chart, DateRangePicker */
 const sidebarMenu = document.querySelector('.sidebar-menu');
 const hamburgerIcon = document.querySelector('.fa-bars');
 const sectionContainer = document.querySelector('.section-container');
@@ -94,3 +94,13 @@ var chart = new Chart(ctx, {
         ]
     },
 });
+
+const elem = document.getElementById('range');
+
+const dateRangePicker = new DateRangePicker(elem, {
+
+    autohide: false,
+
+
+});
+console.log(dateRangePicker);

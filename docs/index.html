@@ -8,6 +8,7 @@
     <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/css/Glyphter.css">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/datepicker.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -88,13 +89,13 @@
                             <h2>General Statistic</h2>
                         </div>
                         <div class="content">
-                            <div class="calendar">
+                            <div class="calendar" id="range">
                                 <div class="start-date">
-                                    <p>dd/mm/yyyy</p>
+                                    <input type="text" name="start" placeholder="dd/mm/yyyy">
                                 </div>
                                 <div class="end-date">
                                     <div>
-                                        <p>dd/mm/yyyy</p>
+                                        <input type="text" name="end" placeholder="dd/mm/yyyy">
                                         <i class="icon-calendar"></i>
                                     </div>
                                 </div>
@@ -314,6 +315,9 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="vendor/datepicker.min.js"></script>
+    <script src="vendor/pl.js"></script>
+    <script src="vendor/datepicker-full.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
