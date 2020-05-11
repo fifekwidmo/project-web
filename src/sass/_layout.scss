@@ -76,6 +76,12 @@ body {
                     color: $font-main-color;
                     font-weight: bold;
                     cursor: pointer;
+                    input {
+                        border: none;
+                        height: 100%;
+                        width: 100%;
+                        cursor: pointer;
+                    }
                 }
                 .end-date {
                     border-top: 1px solid $font-main-color;
@@ -84,6 +90,13 @@ body {
                     padding: 0 30px 0 10px;
                     color: $font-main-color;
                     font-weight: bold;
+                    input {
+                        border: none;
+                        // height: 100%;
+                        width: 100%;
+                        margin-bottom: 8px;
+                        cursor: pointer;
+                    }
                     cursor: pointer;
                     div {
                         display: flex;
@@ -93,9 +106,13 @@ body {
                         cursor: pointer;
                         i {
                             line-height: 55px;
-                            margin-left: 70px;
+                            margin-left: 15px;
                             color: $font-main-color;
                             font-weight: normal;
+                            transition: 1s linear;
+                        }
+                        i:hover {
+                            transform: scale(1.4);
                         }
                     }
                 }
