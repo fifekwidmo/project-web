@@ -96,11 +96,7 @@ var chart = new Chart(ctx, {
 });
 
 const elem = document.getElementById('range');
-
 const dateRangePicker = new DateRangePicker(elem, {
-
     autohide: false,
-
-
 });
 console.log(dateRangePicker);
