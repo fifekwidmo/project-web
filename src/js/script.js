@@ -53,6 +53,9 @@ document.addEventListener('keyup', function(e) {
         closeModal();
     }
 });
+document.querySelector('.second-btn').addEventListener('click', function() {
+    closeModal();
+});
 
 //canvas
 

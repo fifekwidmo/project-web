@@ -640,6 +640,8 @@ input:focus {
         input {
             border: none;
             width: 80%;
+            height: 100%;
+            padding-left: 5px;
         }
         i {
             margin: 5px;
@@ -648,7 +650,7 @@ input:focus {
 }
 
 #second-modal {
-    width: 33%;
+    width: 25%;
     .second-modal-wrapper {
         display: flex;
         flex-direction: row;
@@ -663,6 +665,7 @@ input:focus {
         h4 {
             color: $font-main-color;
             font-weight: normal;
+            padding-left: 8%;
         }
     }
 }
@@ -684,6 +687,7 @@ input:focus {
             color: $font-main-color;
             font-weight: normal;
             text-transform: uppercase;
+            padding-left: 8%;
         }
     }
 }
