@@ -487,6 +487,7 @@ body {
       flex-wrap: nowrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  height: 52px;
   cursor: pointer;
 }
 
